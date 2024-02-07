@@ -1,14 +1,37 @@
 <html>
     <head>
-<tittle>age cal</tittle>
+<title>age cal</title>
+
+<style>
+     p.solid {border-style: solid;} 
+    #heading {
+        text-align: center;
+    }
+  .oval-button {
+   border-radius: 50px; 
+  padding: 10px 20px; 
+  border-color: red;
+  }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px ;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+ 
+</style>
     </head>
-    <body>
-      <h1>Now You Got The update code which i other doveloper changed ssucessfully 
-        now change(remove this)  and add actual code for age cal means headding input and submit button then commit -> sync changes </h1>
-<h2>age cal</h2>
-<label>enter yearofbirth</label>
-<input  type="number">
-<button type="submit">submit</button>
+    <body> 
+<h2 id="heading">Age Calculator</h2>
+<form> 
+    <label>Enter the YearofBirth:</label><br>
+    <input  type="number"><br>
+</form>
+<br><button class="oval-button"  type="submit">submit</button>
 
     </body>
 </html>
