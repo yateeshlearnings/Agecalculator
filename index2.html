@@ -1,0 +1,64 @@
+<html>
+<title> Age Calculator</title>
+<style>
+    #heading {
+        color: red;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #data1,
+    .text,
+    button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        margin-left: 100px;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+    
+    .text {
+        color: rgb(191, 42, 114);
+    }
+    
+    #result {
+        display: none;
+    }
+    
+    #div1 {
+        border-color: red;
+        border-style: dashed;
+        margin-top: 40px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding-bottom: 40px;
+    }
+</style>
+
+<head>
+
+</head>
+
+<body>
+    <div id="div1">
+        <h1 id="heading">
+            Age Calculator
+        </h1>
+        <br>
+        <br>
+        <label class="text">Enter Year Of Birth</label>
+        <br>
+        <input id="data1" type="number" name="yob">
+        <br>
+        <button type="submit" onclick="calc()"> Get My Age </button>
+        <h2 id="result" class="text">Your Age is :</h2>
+    </div>
+    <script>
+        function calc() {
+            document.getElementById("result").innerHTML = "Your Age is :" + (2024 - document.getElementById("data1").value);
+            document.getElementById("result").style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
